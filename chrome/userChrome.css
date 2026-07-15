@@ -1,0 +1,318 @@
+/* =============================================
+   Graphite Grace: Refined — userChrome.css
+   Place in your Firefox profile's chrome/ folder,
+   or alongside manifest.json for theme bundling.
+   Requires toolkit.legacyUserProfileCustomizations.stylesheets = true
+   ============================================= */
+
+:root {
+  --gg-bg: #2F2F2F;
+  --gg-bg-dark: #222222;
+  --gg-bg-darker: #1A1A1A;
+  --gg-bg-popup: #262626;
+  --gg-bg-sidebar: #2F2F2F;
+  --gg-text: #EEEEEE;
+  --gg-text-muted: #B4B4B4;
+  --gg-accent: #69B2FF;
+  --gg-accent-hover: rgba(105, 178, 255, 0.10);
+  --gg-accent-active: rgba(105, 178, 255, 0.20);
+  --gg-border: #484848;
+  --gg-border-light: #555555;
+}
+
+/* ── Tab Bar ────────────────────────────────── */
+
+/* Hover glow on inactive tabs */
+.tabbrowser-tab:not([selected]):hover .tab-content {
+  background-color: var(--gg-accent-hover) !important;
+}
+
+/* Selected tab text weight */
+.tabbrowser-tab[selected] .tab-text {
+  font-weight: 600 !important;
+}
+
+/* Tab close button — accent on hover */
+.tab-close-button:hover {
+  fill: var(--gg-accent) !important;
+  background-color: transparent !important;
+}
+
+/* Sound / Mute button accent */
+.tab-icon-overlay {
+  fill: var(--gg-accent) !important;
+  opacity: 0.8 !important;
+}
+
+/* Container indicator line on tabs */
+.tabbrowser-tab[usercontextid] .tab-context-line {
+  height: 2px !important;
+}
+
+/* ── URL Bar & Search Bar ──────────────────── */
+
+/* URL bar background when focused */
+#urlbar[open] > .urlbar-background,
+#urlbar[focused] > .urlbar-background {
+  background-color: var(--gg-bg-popup) !important;
+  border-color: var(--gg-accent) !important;
+}
+
+/* URL bar results */
+#urlbar .urlbarView,
+.urlbarView {
+  background-color: var(--gg-bg-popup) !important;
+  color: var(--gg-text) !important;
+}
+
+/* URL bar result row hover */
+#urlbar .urlbarView-row:hover > .urlbarView-row-inner,
+.urlbarView-row:hover > .urlbarView-row-inner {
+  background-color: var(--gg-accent-hover) !important;
+}
+
+/* URL bar selected row */
+#urlbar .urlbarView-row[selected] > .urlbarView-row-inner,
+.urlbarView-row[selected] > .urlbarView-row-inner {
+  background-color: rgba(105, 178, 255, 0.15) !important;
+}
+
+/* URL bar search / URL text styling */
+#urlbar .urlbarView-title,
+.urlbarView-title {
+  color: var(--gg-text) !important;
+}
+#urlbar .urlbarView-tags,
+.urlbarView-tags {
+  color: var(--gg-accent) !important;
+}
+#urlbar .urlbarView-secondary,
+.urlbarView-secondary,
+#urlbar .urlbarView-url,
+.urlbarView-url {
+  color: var(--gg-text-muted) !important;
+}
+
+/* URL bar tip (e.g. search with...) */
+#urlbar .urlbarView-tip-button {
+  background-color: var(--gg-accent) !important;
+  color: var(--gg-bg-darker) !important;
+}
+
+/* ── Identity / Site Info Panel ────────────── */
+
+.identity-popup,
+#identity-popup {
+  --panel-background: var(--gg-bg-popup) !important;
+  --panel-border-color: var(--gg-border) !important;
+}
+
+.identity-popup-section {
+  border-bottom-color: var(--gg-border-light) !important;
+}
+
+/* ── Bookmarks Bar ─────────────────────────── */
+
+#PersonalToolbar {
+  --toolbarbutton-hover-background: var(--gg-accent-hover) !important;
+}
+
+#PlacesToolbarItems .bookmark-item {
+  color: var(--gg-text) !important;
+  padding-block: 2px 2px !important;
+}
+
+#PlacesToolbarItems .bookmark-item:hover {
+  background-color: var(--gg-accent-hover) !important;
+}
+
+/* ── Sidebar ───────────────────────────────── */
+
+#sidebar-box {
+  --sidebar-background-color: var(--gg-bg-sidebar) !important;
+  --sidebar-text-color: var(--gg-text) !important;
+  --sidebar-border-color: var(--gg-border) !important;
+}
+
+.sidebar-panel {
+  background-color: var(--gg-bg-sidebar) !important;
+  color: var(--gg-text) !important;
+}
+
+/* Sidebar tree items */
+.sidebar-panel treechildren::-moz-tree-row(hover) {
+  background-color: var(--gg-accent-hover) !important;
+}
+.sidebar-panel treechildren::-moz-tree-row(selected) {
+  background-color: rgba(105, 178, 255, 0.25) !important;
+}
+.sidebar-panel treechildren::-moz-tree-cell-text(selected) {
+  color: var(--gg-text) !important;
+  font-weight: 600 !important;
+}
+
+/* Sidebar search box */
+.sidebar-panel input,
+.sidebar-panel .search-box {
+  background-color: var(--gg-bg-dark) !important;
+  color: var(--gg-text) !important;
+  border-color: var(--gg-border) !important;
+}
+
+/* Sidebar splitter */
+#sidebar-splitter {
+  background-color: var(--gg-border) !important;
+  border: none !important;
+  width: 1px !important;
+}
+
+/* ── Context Menus ─────────────────────────── */
+
+menupopup,
+.popup-internal {
+  --panel-background: var(--gg-bg-popup) !important;
+  --panel-border-color: var(--gg-border) !important;
+  --panel-color: var(--gg-text) !important;
+}
+
+menupopup > menuitem,
+menupopup > menu {
+  color: var(--gg-text) !important;
+}
+
+menupopup > menuitem[_moz-menuactive],
+menupopup > menu[_moz-menuactive] {
+  background-color: var(--gg-accent-hover) !important;
+  color: var(--gg-text) !important;
+}
+
+menupopup > menuitem[disabled] {
+  color: var(--gg-text-muted) !important;
+  opacity: 0.5 !important;
+}
+
+menuseparator {
+  border-top-color: var(--gg-border) !important;
+}
+
+/* ── Popup / Panel dropdowns ───────────────── */
+
+.panel-arrowcontent {
+  background-color: var(--gg-bg-popup) !important;
+  color: var(--gg-text) !important;
+}
+
+.panel-header,
+panel-header {
+  border-bottom-color: var(--gg-border) !important;
+}
+
+/* ── Find Bar ──────────────────────────────── */
+
+#FindToolbar {
+  background-color: var(--gg-bg-popup) !important;
+  border-top-color: var(--gg-border) !important;
+  color: var(--gg-text) !important;
+}
+
+#findbar-input {
+  background-color: var(--gg-bg-dark) !important;
+  color: var(--gg-text) !important;
+  border-color: var(--gg-border) !important;
+}
+
+#findbar-input:focus {
+  border-color: var(--gg-accent) !important;
+}
+
+/* Highlighted find results in find bar */
+#findbar-container .findbar-find-status {
+  color: var(--gg-text-muted) !important;
+}
+
+/* ── Scrollbars ────────────────────────────── */
+
+scrollbar {
+  scrollbar-color: var(--gg-border) transparent !important;
+  scrollbar-width: thin !important;
+}
+
+scrollbar thumb {
+  background-color: var(--gg-border-light) !important;
+  border-radius: 6px !important;
+}
+
+scrollbar thumb:hover {
+  background-color: var(--gg-accent) !important;
+}
+
+scrollbar scrollbarbutton {
+  display: none !important;
+}
+
+/* ── Library Window ────────────────────────── */
+
+#placesView {
+  background-color: var(--gg-bg) !important;
+  color: var(--gg-text) !important;
+}
+
+#placesView treechildren::-moz-tree-row(hover) {
+  background-color: var(--gg-accent-hover) !important;
+}
+#placesView treechildren::-moz-tree-row(selected) {
+  background-color: rgba(105, 178, 255, 0.25) !important;
+}
+
+/* ── Downloads Panel ───────────────────────── */
+
+#downloadsPanel .panel-header {
+  border-bottom-color: var(--gg-border) !important;
+}
+
+.downloadButton {
+  fill: var(--gg-accent) !important;
+}
+
+#downloadsListBox > richlistitem[selected] {
+  background-color: var(--gg-accent-hover) !important;
+}
+
+/* ── General Toolbar Button Hover ──────────── */
+
+toolbarbutton:not([disabled]):hover {
+  fill: var(--gg-accent) !important;
+}
+
+/* ── URL Bar Autocomplete Dropdown Height ──── */
+
+#urlbar .urlbarView-results {
+  scrollbar-color: var(--gg-border) transparent !important;
+}
+
+/* ── Menu Bar (if enabled) ─────────────────── */
+
+#toolbar-menubar {
+  background-color: var(--gg-bg-darker) !important;
+  color: var(--gg-text) !important;
+}
+
+#main-menubar > menu:hover {
+  background-color: var(--gg-accent-hover) !important;
+}
+
+/* ── Status Panel (bottom-left URL preview) ── */
+
+#statuspanel-label {
+  background-color: var(--gg-bg-popup) !important;
+  border-color: var(--gg-border) !important;
+  color: var(--gg-text-muted) !important;
+}
+
+/* ── Fullscreen warning ────────────────────── */
+
+#fullscreen-warning-message {
+  background-color: var(--gg-bg-popup) !important;
+  color: var(--gg-text) !important;
+  border-color: var(--gg-border) !important;
+}

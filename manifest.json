@@ -1,0 +1,83 @@
+{
+  "manifest_version": 2,
+  "version": "1.2.0",
+  "name": "Graphite Grace: Refined",
+  "description": "A modern graphite Firefox theme with subtle blue accents and layered dark surfaces.",
+  "author": "Matt",
+  "homepage_url": "https://github.com/00mtboylan/graphite-grace-refined",
+  "icons": {
+    "32": "images/icon.svg",
+    "64": "images/icon.svg"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "graphite-grace-refined@mboylan.github.io",
+      "strict_min_version": "115.0"
+    }
+  },
+
+  "theme": {
+    "images": {
+      "additional_backgrounds": ["images/theme_frame.jpg", "images/bg-overlay.png"]
+    },
+
+    "properties": {
+      "additional_backgrounds_alignment": ["center center", "center center"],
+      "additional_backgrounds_tiling": ["repeat", "repeat"],
+      "color_scheme": "dark",
+      "content_color_scheme": "dark"
+    },
+
+    "colors": {
+      "frame": "#2F2F2F",
+      "frame_inactive": "#292929",
+
+      "toolbar": "#2F2F2F",
+      "toolbar_text": "#EEEEEE",
+      "bookmark_text": "#EEEEEE",
+
+      "tab_background_text": "#B4B4B4",
+      "tab_background_separator": "rgba(255,255,255,.08)",
+      "tab_text": "#EEEEEE",
+      "tab_selected": "#2F2F2F",
+      "tab_line": "rgba(105,178,255,.66)",
+      "tab_loading": "rgba(255,255,255,.18)",
+
+      "toolbar_field": "#222222",
+      "toolbar_field_text": "#EEEEEE",
+      "toolbar_field_focus": "#222222",
+      "toolbar_field_text_focus": "#EEEEEE",
+      "toolbar_field_border": "#484848",
+      "toolbar_field_border_focus": "#69B2FF",
+      "toolbar_field_highlight": "#69B2FF",
+      "toolbar_field_highlight_text": "#FFFFFF",
+
+      "toolbar_top_separator": "#69B2FF",
+      "toolbar_bottom_separator": "#69B2FF",
+      "toolbar_vertical_separator": "#484848",
+
+      "icons": "#EEEEEE",
+      "icons_attention": "#7EC2FF",
+
+      "button_background_hover": "rgba(105,178,255,.10)",
+      "button_background_active": "#69B2FF",
+
+      "popup": "#262626",
+      "popup_text": "#EEEEEE",
+      "popup_border": "#484848",
+      "popup_highlight": "#69B2FF",
+      "popup_highlight_text": "#FFFFFF",
+
+      "sidebar": "#2F2F2F",
+      "sidebar_text": "#EEEEEE",
+      "sidebar_border": "#484848",
+      "sidebar_highlight": "#69B2FF",
+      "sidebar_highlight_text": "#FFFFFF",
+
+      "ntp_background": "#2F2F2F",
+      "ntp_card_background": "#3A3A3A",
+      "ntp_text": "#EEEEEE"
+    }
+  }
+}
