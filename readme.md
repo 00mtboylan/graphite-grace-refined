@@ -13,14 +13,21 @@ A modern, refined interpretation of the classic Graphite Grace Firefox theme —
 
 ## Installation
 
-### Option 1: Temporary install (for testing)
+### Option 1: Download from Releases (recommended)
+
+1. Go to the [Releases page](https://github.com/00mtboylan/graphite-grace-refined/releases)
+2. Download the latest `.zip` asset
+3. Open Firefox → `about:addons` → gear icon → **Install Add-on From File...**
+4. Select the downloaded zip
+
+### Option 2: Temporary install (for testing)
 
 1. Open Firefox and go to `about:debugging#/runtime/this-firefox`
 2. Click **Load Temporary Add-on...**
 3. Select any file in the project directory (e.g. `manifest.json`)
 4. Theme is applied immediately until Firefox closes
 
-### Option 2: Signed install (permanent)
+### Option 3: Signed install (AMO)
 
 Upload the `.zip` to [addons.mozilla.org](https://addons.mozilla.org) for signing, then install from `about:addons`.
 
