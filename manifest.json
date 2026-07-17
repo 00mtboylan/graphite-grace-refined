@@ -49,7 +49,7 @@
       "toolbar_field_focus": "#222222",
       "toolbar_field_text_focus": "#EEEEEE",
       "toolbar_field_border": "#484848",
-      "toolbar_field_border_focus": "#69B2FF",
+      "toolbar_field_border_focus": "rgba(105,178,255,0.6)",
       "toolbar_field_highlight": "#69B2FF",
       "toolbar_field_highlight_text": "#FFFFFF",
 

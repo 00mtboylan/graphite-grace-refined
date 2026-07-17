@@ -65,7 +65,7 @@
 #urlbar[open] > .urlbar-background,
 #urlbar[focused] > .urlbar-background {
   background-color: var(--gg-bg-popup) !important;
-  border-color: var(--gg-accent) !important;
+  border-color: rgba(105, 178, 255, 0.6) !important;
 }
 
 /* URL bar results */
