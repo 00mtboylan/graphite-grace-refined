@@ -42,6 +42,16 @@ For deeper browser chrome refinements via `userChrome.css`:
 3. Copy the `chrome/` folder from this repo into your profile directory
 4. Restart Firefox
 
+## Screenshots
+
+| New Tab | Preferences |
+|:-------:|:-----------:|
+| ![New Tab](screenshots/screenshot-newtab.png) | ![Preferences](screenshots/screenshot-preferences.png) |
+
+| Sidebar | Popups & Menus |
+|:-------:|:--------------:|
+| ![Sidebar](screenshots/screenshot-sidebar.png) | ![Popups](screenshots/screenshot-popups.png) |
+
 ## Theme Structure
 
 ```

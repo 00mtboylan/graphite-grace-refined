@@ -49,6 +49,16 @@
   height: 2px !important;
 }
 
+/* Tab loading indicator (throbber) */
+.tab-throbber::before {
+  fill: var(--gg-accent) !important;
+}
+
+/* Tab loading progress bar */
+.tab-progress-bar {
+  background-color: var(--gg-accent) !important;
+}
+
 /* ── URL Bar & Search Bar ──────────────────── */
 
 /* URL bar background when focused */

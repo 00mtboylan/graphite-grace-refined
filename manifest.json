@@ -42,7 +42,7 @@
       "tab_text": "#EEEEEE",
       "tab_selected": "#2F2F2F",
       "tab_line": "rgba(105,178,255,0.6)",
-      "tab_loading": "rgba(255,255,255,.18)",
+      "tab_loading": "rgba(105,178,255,0.5)",
 
       "toolbar_field": "#222222",
       "toolbar_field_text": "#EEEEEE",
@@ -61,7 +61,7 @@
       "icons_attention": "#7EC2FF",
 
       "button_background_hover": "rgba(105,178,255,.10)",
-      "button_background_active": "#69B2FF",
+      "button_background_active": "rgba(105,178,255,0.20)",
 
       "popup": "#262626",
       "popup_text": "#EEEEEE",
