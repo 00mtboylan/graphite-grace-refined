@@ -50,7 +50,7 @@
       "toolbar_field_text_focus": "#EEEEEE",
       "toolbar_field_border": "#484848",
       "toolbar_field_border_focus": "rgba(105,178,255,0.6)",
-      "toolbar_field_highlight": "rgba(105,178,255,0.45)",
+      "toolbar_field_highlight": "rgba(105,178,255,0.6)",
       "toolbar_field_highlight_text": "#FFFFFF",
 
       "toolbar_top_separator": "rgba(105,178,255,0.6)",
