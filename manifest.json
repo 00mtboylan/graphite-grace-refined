@@ -72,7 +72,7 @@
       "sidebar": "#2F2F2F",
       "sidebar_text": "#EEEEEE",
       "sidebar_border": "#484848",
-      "sidebar_highlight": "#69B2FF",
+      "sidebar_highlight": "rgba(105,178,255,0.6)",
       "sidebar_highlight_text": "#FFFFFF",
 
       "ntp_background": "#2F2F2F",
