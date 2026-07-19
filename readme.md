@@ -9,7 +9,6 @@ A modern, refined interpretation of the classic Graphite Grace Firefox theme —
 - **Reduced eye strain** — carefully chosen neutral gray palette with no blue cast in backgrounds
 - **Dark color scheme** — explicit `color_scheme: dark` for all chrome and content pages via manifest
 - **39 themed color properties** — complete coverage of the Firefox theme API including `tab_line`, `tab_background_separator`, `bookmark_text`, `toolbar_vertical_separator`, `ntp_card_background`
-- **Deep chrome refinements** — tab bar, URL bar, sidebar, scrollbars, context menus, find bar, and more (via `userChrome.css`)
 
 ## Installation
 
@@ -33,15 +32,6 @@ Install directly from [addons.mozilla.org](https://addons.mozilla.org/en-US/fire
 3. Select any file in the project directory (e.g. `manifest.json`)
 4. Theme is applied immediately until Firefox closes
 
-### Chrome CSS (optional)
-
-For deeper browser chrome refinements via `userChrome.css`:
-
-1. Go to `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
-2. Go to `about:support` → **Profile Directory** → **Open Folder**
-3. Copy the `chrome/` folder from this repo into your profile directory
-4. Restart Firefox
-
 ## Screenshots
 
 | New Tab | Preferences |
@@ -57,8 +47,6 @@ For deeper browser chrome refinements via `userChrome.css`:
 ```
 Graphite-Grace-Refined/
 ├── manifest.json        # Theme manifest — installable add-on
-├── chrome/
-│   └── userChrome.css   # Browser chrome refinements
 ├── images/
 │   ├── theme_frame.jpg  # Header background image
 │   ├── bg-overlay.png   # Subtle dot-grid overlay texture
@@ -94,7 +82,6 @@ All surface colors use neutral grays (R=G=B) with no blue cast. Blue is reserved
 ## Requirements
 
 - Firefox 115 or later
-- For Chrome CSS: `toolkit.legacyUserProfileCustomizations.stylesheets = true`
 
 ## License
 
