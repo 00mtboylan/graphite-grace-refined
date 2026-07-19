@@ -18,12 +18,11 @@ A modern, refined interpretation of the classic Graphite Grace Firefox theme —
 
 Install directly from [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/graphite-grace-refined/) — signed and one-click.
 
-### Option 2: Download from Releases
+### Option 2: Install from file (manual)
 
-1. Go to the [Releases page](https://github.com/00mtboylan/graphite-grace-refined/releases)
-2. Download the latest `.zip` asset
-3. Open Firefox → `about:addons` → gear icon → **Install Add-on From File...**
-4. Select the downloaded zip
+1. Download the latest `-amo.zip` from the [Releases page](https://github.com/00mtboylan/graphite-grace-refined/releases)
+2. Open Firefox → `about:addons` → gear icon → **Install Add-on From File...**
+3. Select the downloaded zip
 
 ### Option 3: Temporary install (for testing)
 
